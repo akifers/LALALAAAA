@@ -3,9 +3,6 @@
 <header>
     <p>Здраствуйте <span id="kto"> </span>!Меня зовут Аки Ферс!</p>
     <a class="gif" href="#"><img src="girlfriend.gif" style="border: 3px solid #00a8e1;"/></a>
-    <p></p>
-    <div class='VERH1'>
-    
     <svg width='600' height='200'>
   <filter id='money'>
     <feMorphology in='SourceGraphic' operator='dilate' radius='2' result='expand'/>
@@ -79,7 +76,7 @@
   </text>
 </svg>
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgNXA6pMjJr5wQ0Rn-SVDViJuafcJoBsBJw&usqp=CAU">\
-    </div>
+
 </header>
 <div class="fnf">
    <div class="fnf1">
@@ -152,22 +149,39 @@ sonic,sonic hd,sunky и т. д.<br>
         };
       </script>
 <style>
-    /*
-    .VERH1{
-    display:flex;
-        justify-content: space-around;
-    }
-    */
-    .gif {
+       .gif {
 
 display:block; /* Устанавливаем */
 
-width:150px; /* Ширина и высота картинки */
-height:150px;
+/*width:150px; /* Ширина и высота картинки */
+/*height:150px;*/
+/*border: 2px;
+solid #ff0000;*/
+background:url('stat.gif') no-repeat; /* Заливаем блок статичной картинкой */
+
 }
 
 /* Как видно, начальное (статическое) изображение задано как фон блока с шириной и высотой этого изображения. */
 
+a.gif img {
+
+visibility:hidden; /* Aнимация не была видна в ситуации, когда мышь не наведена */
+
+}
+
+a.gif:hover {
+
+background:none; /* Фон (статичное изображение) не было видно при наведении мыши */
+
+}
+
+a.gif:hover img {
+
+visibility:visible; /* При наведении анимация показывается */
+
+border:0; /* без обрамления ;) */
+
+}
 
     
     @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
